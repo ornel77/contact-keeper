@@ -11,6 +11,11 @@ const app = express()
 //Connect datablase
 connectDB()
 
+//Init middleware
+//now we can accept data or here body
+app.use(express.json({ extended: false}))
+
+
 //create an end point /url
 app.get('/', (req,res) => res.json({ msg: 'Welcome to the ContactKeeperAPI'}))
 
