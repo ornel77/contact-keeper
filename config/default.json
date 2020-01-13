@@ -1,4 +1,5 @@
 {
     "_comment": "file for global variables",
-    "mongoURI": "mongodb+srv://ornel77:ornel77@cluster0-lkzoc.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://ornel77:ornel77@cluster0-lkzoc.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
