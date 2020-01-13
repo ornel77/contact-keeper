@@ -3,9 +3,13 @@
 
 //we can't use import without implementing babel or typescript so we use this:
 const express = require('express')
+const connectDB = require('./config/db')
 
 //init express
 const app = express()
+
+//Connect datablase
+connectDB()
 
 //create an end point /url
 app.get('/', (req,res) => res.json({ msg: 'Welcome to the ContactKeeperAPI'}))
